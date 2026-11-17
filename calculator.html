@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Basic Calculator</title>
+
+    <style>
+
+        body {
+            background-color: #f1f5f9;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .calculator {
+            background-color: white;
+            width: 500px;
+            padding: 55px 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            text-align: center;
+            color: #1e293b;
+            margin-bottom: 20px;
+        }
+
+        .display {
+            width: 100%;
+            height: 60px;
+            background-color: #f1f5f9;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-align: right;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        button {
+            height: 75px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #e2e8f0;
+        }
+
+        button:hover {
+            background-color: #cbd5e1;
+        }
+
+        .operator {
+            background-color: #f91616;
+            color: white;
+        }
+
+        .operator:hover {
+            background-color: #ea580c;
+        }
+
+        .clear {
+            background-color: #7744ef;
+            color: white;
+        }
+
+        .equal {
+            background-color: #22c55e;
+            color: white;
+        }
+
+        .zero {
+            grid-column: span 2;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <h2>Calculator</h2>
+
+        <input type="text" class="display" placeholder="0" readonly>
+
+        <div class="buttons">
+
+            <button class="clear">C</button>
+            <button>DEL</button>
+            <button>%</button>
+            <button class="operator">÷</button>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">×</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">-</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">+</button>
+
+            <button class="zero">0</button>
+            <button>.</button>
+            <button class="equal">=</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
